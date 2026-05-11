@@ -1,0 +1,16 @@
+[package]
+name = "solarchain_contract"
+version = "0.1.0"
+edition = "2021"
+authors = ["RenewIO <contact@renewio.org>"]
+description = "Soroban smart contract for SolarChain community solar funding."
+license = "MIT"
+repository = "https://github.com/RenewIO/Solarchain-Contract"
+keywords = ["soroban", "stellar", "smart-contract", "solar", "renewable-energy"]
+categories = ["blockchain", "smart-contract", "energy"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+soroban-sdk = { version = "0.10.0", default-features = false, features = ["env"] }
